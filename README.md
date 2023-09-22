@@ -16,7 +16,7 @@ pre-commit --help
 pre-commit sample-config > .pre-commit-config.yaml
 ```
 
-# check other default hooks at https://pre-commit.com/hooks.html
+# some default hooks at https://pre-commit.com/hooks.html
 - check-json                # Checks JSON files syntax
 - check-yaml                # Checks YAML files syntax
 - check-toml                # Checks TOML files syntax
@@ -28,5 +28,12 @@ pre-commit sample-config > .pre-commit-config.yaml
 
 # some other useful hooks
 - black                     # Python code formatter
+- black-jupyter             # Python code formatter (with Jupyter Notebook support)
 - jupyter-notebook-cleanup  # Removes cell output of .ipynb notebook and some metadata for better security.
 - isort                     # Sorts and organizes Python imports
+- pep257                    # Checks compliance with Python docstring conventions
+- python-no-eval            # A quick check for the `eval()` built-in function
+- dead                      # Simple python dead code detection
+- terraform_fmt             # Rewrites all Terraform configuration files to a canonical format
+- terraform_validate        # Validates all Terraform configuration files
+- jenkinslint               # Validates Jenkinsfiles using a Jenkins server
