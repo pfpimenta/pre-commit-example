@@ -14,9 +14,13 @@ def impute_data(df: pd.DataFrame) -> pd.DataFrame:
     # Transform the DataFrames column with the fitted data
     df[columns]=imputer.transform(df[columns])
 
+
     return df
 
 def drop_missing_records(df: pd.DataFrame) -> pd.DataFrame:
     # Dropping missing records in the sex column
     df = df.dropna(subset=['sex'])
     return df
+
+def funcao_nao_usada(valor: int) -> float:
+    return valor/100
