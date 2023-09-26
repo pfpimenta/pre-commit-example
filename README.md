@@ -32,6 +32,7 @@ pre-commit sample-config > .pre-commit-config.yaml
 - jupyter-notebook-cleanup  # Removes cell output of .ipynb notebook and some metadata for better security.
 - isort                     # Sorts and organizes Python imports
 - pep257                    # Checks compliance with Python docstring conventions
+- mypy                      # Runs MyPy static type checker
 - python-no-eval            # A quick check for the `eval()` built-in function
 - dead                      # Simple python dead code detection
 - terraform_fmt             # Rewrites all Terraform configuration files to a canonical format
